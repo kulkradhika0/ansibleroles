@@ -1,0 +1,8 @@
+---
+# tasks file for gitClone
+
+- name: Download Project
+  get_url: url=https://github.com/edureka-devops/projCert/archive/master.zip dest=/root/edureka
+
+- name: Unzip delivery
+  unarchive: src=/root/edureka/projCert-master.zip dest=/var/www copy=no

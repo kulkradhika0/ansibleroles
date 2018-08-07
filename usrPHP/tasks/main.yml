@@ -1,0 +1,5 @@
+---
+# tasks file for usrPHP
+
+- name: Ensure that PHP is installed
+  apt: name=php state=present
